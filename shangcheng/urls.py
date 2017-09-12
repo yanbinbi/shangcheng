@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from product_manage.views import home
+from user_manage.views import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'', home, name="home"),
+    url(r'', index, name="index"),
     url(r'^user/$', include("user_manage.urls")),
     url(r'^product/$', include("product_manage.urls")),
 ]

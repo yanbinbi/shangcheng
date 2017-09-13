@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'user_manage.apps.UserManageConfig',
+    'user_manage',
     'product_manage',
 ]
 
